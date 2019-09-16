@@ -1,19 +1,16 @@
 <template>
   <div>
-    <b-navbar vertical class="w-25">
-      <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-brand>Holger Mueller</b-navbar-brand>
-
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <v-navigation-drawer>
+      <template></template>
 
       
-        <b-navbar-nav>
-          <b-nav-item href="About">About</b-nav-item>
-          <b-nav-item href="Portfolio">Portfolio</b-nav-item>
-          <b-nav-item href="Contact">Contact</b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
+        <v-list>
+          <v-list-item link>About</v-list-item>
+          <v-list-item link>Portfolio</v-list-item>
+          <v-list-item link>Contact</v-list-item>
+        </v-list>
+      
+    </v-navigation-drawer>
   </div>
 </template>
 
