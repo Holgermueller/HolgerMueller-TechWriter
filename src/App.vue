@@ -2,21 +2,24 @@
   <v-app>
     <Nav />
     <Index />
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import Index from './components/index';
-import Nav from "./components/Layout/Nav"
+import Index from "./components/index";
+import Nav from "./components/Layout/Nav";
+import Footer from "./components/Layout/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Nav,
-    Index
+    Index,
+    Footer
   },
   data: () => ({
     //
-  }),
+  })
 };
 </script>

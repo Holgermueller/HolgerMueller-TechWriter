@@ -1,22 +1,25 @@
 <template>
-  <div class="home">
+  <div id="home">
+    <Banner />
     <About />
     <Portfolio />
-    <Contact />
+    <Connect />
   </div>
 </template>
 
 <script>
+import Banner from "./Layout/Banner"
 import About from "./Layout/About";
 import Portfolio from "./Layout/Portfolio";
-import Contact from "./Layout/Contact";
+import Connect from "./Layout/Connect";
 
 export default {
   name: "Home",
   components: {
+    Banner,
     About,
     Portfolio,
-    Contact
+    Connect
   }
 };
 </script>
