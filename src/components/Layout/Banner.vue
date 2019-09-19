@@ -7,7 +7,7 @@
       </v-row>
 
       <div class="name display-3">Holger Mueller</div>
-      <div class="subheader">Front-End Developer Problem-Solver</div>
+      <div class="subheader">Front-End Developer / Problem-Solver</div>
     </v-card>
   </div>
 </template>

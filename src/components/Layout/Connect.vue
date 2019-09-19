@@ -18,6 +18,15 @@
         </v-row>
       </v-container>
     </v-card>
+
+    <div class="form-container">
+      <form class="form" action>
+        <v-text-field v-model="Name" placeholder="Name (required)" solo></v-text-field>
+        <v-text-field v-model="Email" placeholder="Email (required)" solo></v-text-field>
+        <v-text-field v-model="Subject" placeholder="Subject" solo></v-text-field>
+        <v-textarea placeholder="Message" solo></v-textarea>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -26,8 +35,13 @@ export default {
   data() {
     return {
       connections: [
-        { name: "Github", connection_class: "mdi mdi-github-circle", link: "#" },
-        { name: "LinkedIn", connection_class: "mdi mdi-linkedin", link: "#" }
+        {
+          name: "Github",
+          connection_class: "mdi mdi-github-circle",
+          link: "#"
+        },
+        { name: "LinkedIn", connection_class: "mdi mdi-linkedin", link: "#" },
+        { name: "Twitter", connection_class: "mdi mdi-twitter", link: "#" }
       ]
     };
   }
@@ -43,6 +57,7 @@ export default {
 }
 .connections-display {
   width: 75%;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,5 +67,11 @@ a {
 }
 a:hover {
   color: red;
+}
+.form {
+  width: 55%;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
