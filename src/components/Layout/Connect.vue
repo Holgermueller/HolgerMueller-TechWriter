@@ -20,6 +20,7 @@
     </v-card>
 
     <div class="form-container">
+      <h3 class="form-header">Or just email me. I'm more likely to respond this way.</h3>
       <form class="form" action>
         <v-text-field v-model="Name" placeholder="Name (required)" solo></v-text-field>
         <v-text-field v-model="Email" placeholder="Email (required)" solo></v-text-field>
@@ -68,9 +69,15 @@ a {
 a:hover {
   color: red;
 }
+.form-container {
+  margin-top: 4rem;
+}
+.form-header {
+  text-align: center;
+}
 .form {
   width: 55%;
-  margin-top: 5rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
