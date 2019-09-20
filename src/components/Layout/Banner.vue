@@ -2,8 +2,8 @@
   <div id="banner">
     <v-card class="banner-content">
       <v-row align="center" justify="center">
-        <v-img alt="Pic_of_Me" max-height="300"
-        max-width="500"></v-img>
+        <v-img class="pic" alt="Pic_of_Me" max-height="300"
+        max-width="500">Pic goes here</v-img>
       </v-row>
 
       <div class="name display-3">Holger Mueller</div>
@@ -18,6 +18,9 @@
 }
 .banner-content {
   text-align: center;
+}
+.pic {
+  margin-top: 2rem;
 }
 .name {
   padding: 2%;
