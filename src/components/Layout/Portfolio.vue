@@ -4,7 +4,7 @@
 
     <v-container class="portfolio-container" fluid>
       <v-layout row wrap>
-        <v-flex xs12 sm12 md4 lg4 xl4 v-for="(Project,index) in Projects" :key="index">
+        <v-flex xs12 sm12 md6 lg4 xl4 v-for="(Project,index) in Projects" :key="index">
           <v-hover v-slot:default="{hover}">
             <v-card class="project-card" tile :elevation="hover ? 12 : 2">
               <v-img class="card-image" :src="Project.image"></v-img>
@@ -20,7 +20,7 @@
                   <span class="mdi mdi-laptop-mac"></span>See the demo
                 </a>
                 <v-spacer></v-spacer>
-                <a href class="repo">
+                <a :href="Project.repolink" class="repo">
                   <span class="mdi mdi-github-circle"></span>See the repo
                 </a>
               </v-card-actions>
@@ -33,16 +33,40 @@
 </template>
 
 <script>
-
-
 export default {
   data() {
     return {
       Projects: [
-        { title: "Bucket List", description: "Dummy text", image: require("../../images/bucketlistshot.png" )},
-        { title: "Time and Temp Weather App", description: "Dummy text", image: require("../../images/timetempshot.png") },
-        { title: "Inspirational-Thought Generator", description: "Dummy text", image: require("../../images/inspthghtgnrtr.png") },
-        { title: "Friend Finder", description: "Dummy text", image: require("../../images/friendfinder.png") }
+        {
+          title: "Bucket List",
+          description: "Dummy text",
+          image: require("../../images/bucketlistshot.png"),
+          repolink: "https://github.com/Holgermueller/bucketlist"
+        },
+        {
+          title: "React News App",
+          description: "Dummy text",
+          image: require("../../images/nytreact.png"),
+          repolink: "https://github.com/Holgermueller/nytreact2"
+        },
+        {
+          title: "Time and Temp Weather App",
+          description: "Dummy text",
+          image: require("../../images/timetempshot.png"),
+          repolink: "https://github.com/Holgermueller/TimeandTemp"
+        },
+        {
+          title: "Inspirational-Thought Generator",
+          description: "Dummy text",
+          image: require("../../images/inspthghtgnrtr.png"),
+          repolink: "https://github.com/Holgermueller/Inspirational-thought-generator"
+        },
+        {
+          title: "Friend Finder",
+          description: "Dummy text",
+          image: require("../../images/friendfinder.png"),
+          repolink: "https://github.com/Holgermueller/Friend_Finder"
+        }
       ]
     };
   }
