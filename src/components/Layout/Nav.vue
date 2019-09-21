@@ -40,6 +40,8 @@ export default {
 <style scoped>
 #nav {
   z-index: 2;
+  position: fixed;
+  width: 100%;
 }
 .nav-row {
   justify-content: center;

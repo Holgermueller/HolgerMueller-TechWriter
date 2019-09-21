@@ -35,6 +35,9 @@
 export default {
   data() {
     return {
+      Name: null,
+      Email: null,
+      Subject: null,
       connections: [
         {
           name: "Github",

@@ -7,7 +7,7 @@
         <v-flex xs12 sm12 md4 lg4 xl4 v-for="(Project,index) in Projects" :key="index">
           <v-hover v-slot:default="{hover}">
             <v-card class="project-card" tile :elevation="hover ? 12 : 2">
-              <v-img>Pic goes here</v-img>
+              <v-img class="card-image" :src="Project.image"></v-img>
               <v-card-title>
                 <div>{{Project.title}}</div>
               </v-card-title>
@@ -33,14 +33,16 @@
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {
       Projects: [
-        { title: "Project1", description: "Dummy text" },
-        { title: "Project2", description: "Dummy text" },
-        { title: "Project3", description: "Dummy text" },
-        { title: "Project4", description: "Dummy text" }
+        { title: "Bucket List", description: "Dummy text", image: require("../../images/bucketlistshot.png" )},
+        { title: "Time and Temp Weather App", description: "Dummy text", image: require("../../images/timetempshot.png") },
+        { title: "Inspirational-Thought Generator", description: "Dummy text", image: require("../../images/inspthghtgnrtr.png") },
+        { title: "Friend Finder", description: "Dummy text", image: require("../../images/friendfinder.png") }
       ]
     };
   }
@@ -50,6 +52,7 @@ export default {
 <style scoped>
 #Portfolio {
   background-color: aqua;
+  width: 100%;
 }
 .section-header {
   text-align: center;
@@ -59,6 +62,10 @@ export default {
 }
 .project-card {
   margin: 8px;
+}
+.card-image {
+  height: 250px;
+  width: 100%;
 }
 a {
   text-decoration: none;
