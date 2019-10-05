@@ -5,6 +5,7 @@
     <Portfolio class="page-section" />
     <Gear class="page-section" />
     <Connect class="page-section" />
+    <TopButton />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Banner from "./Layout/Banner";
 import About from "./Layout/About";
 import Portfolio from "./Layout/Portfolio";
 import Connect from "./Layout/Connect";
+import TopButton from "./Layout/TopButton";
 import Gear from "./Layout/Gear";
 
 export default {
@@ -22,7 +24,8 @@ export default {
     About,
     Portfolio,
     Connect,
-    Gear
+    Gear,
+    TopButton
   }
 };
 </script>

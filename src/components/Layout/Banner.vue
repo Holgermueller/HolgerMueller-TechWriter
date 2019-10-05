@@ -1,9 +1,9 @@
 <template>
   <div id="banner">
-    <v-card class="banner-content">
+    <v-card tile class="banner-content">
       <v-row align="center" justify="center">
-        <v-img class="pic" src="../../images/profile.png" alt="Pic_of_Me" max-height="500"
-        max-width="500"></v-img>
+        <v-img class="pic" src="../../images/profile.png" alt="Pic_of_Me" max-height="300"
+        max-width="300"></v-img>
       </v-row>
 
       <div class="name display-3">Holger Mueller</div>
@@ -22,6 +22,7 @@
 }
 .pic {
   margin-top: 2rem;
+  object-fit: cover;
 }
 .name {
   padding: 2%;

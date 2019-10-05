@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <v-card>
+    <v-card tile>
       <v-container>
         <v-row no-gutters class="nav-row">
           <v-col v-for="(section, index) in sections" :key="index" class="pa-2" cols="3">

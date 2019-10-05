@@ -1,6 +1,6 @@
 <template>
   <div id="Portfolio">
-    <h1 class="section-header">Projects</h1>
+    <h1 class="section-header">Portfolio</h1>
 
     <v-container class="portfolio-container" fluid>
       <v-layout row wrap>
@@ -13,7 +13,7 @@
               </v-card-title>
               <v-card-text>
                 <p>{{Project.description}}</p>
-                <p>Built with:</p>
+                <p>Built with:  {{Project.tech}}</p>
               </v-card-text>
               <v-card-actions>
                 <a href class="demo">
@@ -39,15 +39,19 @@ export default {
       Projects: [
         {
           title: "Bucket List",
-          description: "Dummy text",
+          description:
+            "Single Page CRUD Application allows users to create the ulimate to-do list, which they can update as they make progress on achieving their goals.",
           image: require("../../images/bucketlistshot.png"),
-          repolink: "https://github.com/Holgermueller/bucketlist"
+          repolink: "https://github.com/Holgermueller/bucketlist",
+          tech: "MongoDB, React, Express, Node"
         },
         {
           title: "React News App",
-          description: "Dummy text",
+          description:
+            "Single Page Application built with MongoDB, Express, React, and Node. Leverages NY Times API so users can scan headlines and save links to read articles later.",
           image: require("../../images/nytreact.png"),
-          repolink: "https://github.com/Holgermueller/nytreact2"
+          repolink: "https://github.com/Holgermueller/nytreact2",
+          tech: "MongoDB, React, Express, Node"
         },
         {
           title: "Time and Temp Weather App",
@@ -59,7 +63,8 @@ export default {
           title: "Inspirational-Thought Generator",
           description: "Dummy text",
           image: require("../../images/inspthghtgnrtr.png"),
-          repolink: "https://github.com/Holgermueller/Inspirational-thought-generator"
+          repolink:
+            "https://github.com/Holgermueller/Inspirational-thought-generator"
         },
         {
           title: "Friend Finder",
