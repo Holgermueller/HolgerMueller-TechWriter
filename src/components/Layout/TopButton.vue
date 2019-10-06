@@ -1,38 +1,38 @@
 <template>
   <div id="topButton">
-    <Button id="button" @click="scrollToTop" @scroll="displayButton">Top</Button>
+    <Button id="button" class="button hidden" @click="scrollToTop">
+      <span class="mdi mdi-arrow-up-bold"></span>
+      Top
+    </Button>
   </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      //showButton: false,
+      //lastScrollPosition: 0
+    };
+  },
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
-    displayButton() {
-      let button = document.getElementById("#button");
-      if (window.scrollY > 20) {
-        console.log("scrolling")
-        button.style.display = "block";
-      } else {
-        console.log("start")
-        button.style.display = "none";
-      }
+    onScrollShowButton() {
+      const button = document.getElementById("button")
+      button.classList.remove("hidden");
+    },
+    atTopHideButton() {
+      let y = document.scrollTop;
+      console.log(y)
     }
-  },
-    directives: {
-      scroll: {
-        
-      }
-    }
+  }
 };
 </script>
 
 <style scoped>
-#button {
-  display: none;
+.button {
   z-index: 99;
   border-radius: 4px;
   border: none;
@@ -46,6 +46,9 @@ export default {
   color: white;
   width: fit-content;
   position: fixed;
+}
+.hidden {
+  display: none;
 }
 </style>>
     
