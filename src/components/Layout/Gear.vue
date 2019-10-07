@@ -6,7 +6,8 @@
     </div>
 
     <div class="gear-display" v-for="(Gear, index) in Gears" :key="index">
-      {{Gear.name}}
+      <h3><span :class="Gear.icon"></span>
+        {{Gear.name}}</h3>
     </div>
   </div>
 </template>
@@ -15,7 +16,12 @@
 export default {
   data() {
     return {
-      Gears: [{ name: "VS Code" }, { name: "Postman" }, { name: "" }]
+      Gears: [
+        { name: "VS Code", icon:"mdi mdi-visual-studio" },
+        { name: "Postman", icon:"mdi" },
+        { name: "Git", icon:"mdi mdi-git" },
+        { name: "Google Analytics", icon: "mdi mdi-google-analytics"  }
+      ]
     };
   }
 };
@@ -26,8 +32,9 @@ export default {
   text-align: center;
 }
 .gear-display {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
   font-size: 30px;
+  text-align: center;
+  display: inline;
 }
 </style>

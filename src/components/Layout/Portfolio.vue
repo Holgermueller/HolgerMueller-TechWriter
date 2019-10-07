@@ -54,7 +54,7 @@ export default {
           tech: "MongoDB, React, Express, Node"
         },
         {
-          title: "Time and Temp Weather App",
+          title: "Time and Temp",
           description: "Dummy text",
           image: require("../../images/timetempshot.png"),
           repolink: "https://github.com/Holgermueller/TimeandTemp"
