@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 #Portfolio {
-  background-color: aqua;
+  background-color: #8fc1e3;
   width: 100%;
 }
 .section-header {

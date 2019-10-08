@@ -1,11 +1,11 @@
 <template>
   <div id="nav">
-    <v-card tile>
+    <v-card class="nav-bar" tile>
       <v-container>
         <v-row no-gutters class="nav-row">
           <v-col v-for="(section, index) in sections" :key="index" class="pa-2" cols="3">
             <div class="link" :id="index">
-              <a v-bind:href="section.link">
+              <a class="section-link" v-bind:href="section.link">
                 <span v-bind:class="section.icon"></span>
                 {{section.title}}
               </a>
@@ -43,6 +43,9 @@ export default {
   position: fixed;
   width: 100%;
 }
+.nav-bar {
+  background-color: #8fc1e3;
+}
 .nav-row {
   justify-content: center;
 }
@@ -53,8 +56,11 @@ export default {
 a {
   text-decoration: none;
 }
+.section-link {
+  color: #31708e;
+}
 a:hover {
-  color: red;
+  color: #687864;
   cursor: pointer;
 }
 </style>

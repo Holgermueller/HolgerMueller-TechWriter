@@ -12,7 +12,7 @@
       </v-row>
 
       <div class="name display-3">Holger Mueller</div>
-      <div class="subheader">Front-End Developer / Problem-Solver</div>
+      <div class="description subheader">Front-End Developer / Problem-Solver</div>
       <v-card-actions class="links">
         <a href>
           <h1 class="mdi mdi-github-circle link"></h1>
@@ -36,6 +36,7 @@
   margin-top: 3rem;
 }
 .banner-content {
+  background-color: #f7f9fb !important;
   text-align: center;
 }
 .pic {
@@ -53,12 +54,15 @@
   margin-left: auto;
   margin-right: auto;
 }
-.link {
-  color: #000;
-}
+
 .link:hover,
 .resume:hover {
   cursor: pointer;
-  color: red;
+  color: #687864;
+}
+.name,
+.description,
+.link {
+  color: #31708e;
 }
 </style>

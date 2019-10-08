@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+#Connect {
+  background-color: #8fc1e3;
+}
 .section-header {
   text-align: center;
 }
@@ -67,10 +70,10 @@ export default {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #31708e;
 }
 a:hover {
-  color: red;
+  color: #687864;
 }
 .form-container {
   margin-top: 4rem;

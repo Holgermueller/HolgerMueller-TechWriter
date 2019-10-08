@@ -1,5 +1,5 @@
 <template>
-  <div id="About">
+  <div id="About" class="about">
     <h1 class="section-header">About</h1>
     <p class="about-paragraph">I'm a full-stack front-end developer living in Minneapolis, MN.</p>
     <p
@@ -9,15 +9,17 @@
 </template>
 
 <style scoped>
-#about {
+.about {
   justify-content: center;
 }
 .section-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 }
 .about-paragraph {
-  margin-left: 5%;
-  margin-right: 5%;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 </style>
