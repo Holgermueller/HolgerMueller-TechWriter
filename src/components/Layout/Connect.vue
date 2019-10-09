@@ -42,10 +42,18 @@ export default {
         {
           name: "Github",
           connection_class: "mdi mdi-github-circle",
-          link: "#"
+          link: "https://github.com/Holgermueller"
         },
-        { name: "LinkedIn", connection_class: "mdi mdi-linkedin", link: "#" },
-        { name: "Twitter", connection_class: "mdi mdi-twitter", link: "#" }
+        {
+          name: "LinkedIn",
+          connection_class: "mdi mdi-linkedin",
+          link: "https://www.linkedin.com/in/holger-mueller-75855114a/"
+        },
+        {
+          name: "Twitter",
+          connection_class: "mdi mdi-twitter",
+          link: "https://twitter.com/thatHMMueller"
+        }
       ]
     };
   }

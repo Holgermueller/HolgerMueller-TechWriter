@@ -14,11 +14,11 @@
       <div class="name display-3">Holger Mueller</div>
       <div class="description subheader">Front-End Developer / Problem-Solver</div>
       <v-card-actions class="links">
-        <a href>
+        <a href="https://github.com/Holgermueller">
           <h1 class="mdi mdi-github-circle link"></h1>
         </a>
         <v-spacer></v-spacer>
-        <a href>
+        <a href="https://www.linkedin.com/in/holger-mueller-75855114a/">
           <h1 class="mdi mdi-linkedin link"></h1>
         </a>
         <v-spacer></v-spacer>

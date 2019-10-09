@@ -1,10 +1,9 @@
 <template>
   <div id="footer">
-    <v-card tile>
+    <v-card class="footer" tile>
       <div class="subtitle-2">Holger Mueller 2019 &copy;</div>
-      <hr />
-      <div>This site built with Vue/Vuetify</div>
-      <div>Deployed on Netlify</div>
+      <div class="caption">This site built with Vue / Vuetify</div>
+      <div class="caption">Deployed on Netlify</div>
     </v-card>
   </div>
 </template>
@@ -15,5 +14,9 @@
   bottom: 0;
   width: 100%;
   text-align: center;
+  padding-top: 2%;
+}
+.footer {
+  background-color: #31708e !important;
 }
 </style>

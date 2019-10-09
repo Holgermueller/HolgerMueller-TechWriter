@@ -33,6 +33,6 @@ export default {
 <style scoped>
 .page-section {
   margin-top: 5rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
 }
 </style>
