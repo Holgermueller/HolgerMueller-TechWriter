@@ -22,7 +22,7 @@
           <h1 class="mdi mdi-linkedin link"></h1>
         </a>
         <v-spacer></v-spacer>
-        <a href>
+        <a href="https://docs.google.com/document/d/1ECnxm-wbN3Wsn2j235rghJSNboBEsaZba_TSgauNVQ0/edit">
           <h1 class="mdi mdi-file-download-outline resume link"></h1>
         </a>
       </v-card-actions>
