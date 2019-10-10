@@ -21,11 +21,17 @@
 
     <div class="form-container">
       <h3 class="form-header">Or just email me. I'm more likely to respond this way.</h3>
-      <form class="form" action>
+      <form class="form" action="#">
         <v-text-field v-model="Name" placeholder="Name (required)" solo></v-text-field>
         <v-text-field v-model="Email" placeholder="Email (required)" solo></v-text-field>
         <v-text-field v-model="Subject" placeholder="Subject" solo></v-text-field>
-        <v-textarea placeholder="Message" solo></v-textarea>
+        <v-textarea v-model="Message" placeholder="Message" solo></v-textarea>
+
+        <v-btn :disabled="!isComplete" class="button" @click="sendMessage">
+          <h1>
+            <span class="mdi mdi-email"></span>
+          </h1>
+        </v-btn>
       </form>
     </div>
   </div>
@@ -38,6 +44,7 @@ export default {
       Name: null,
       Email: null,
       Subject: null,
+      Message: null,
       connections: [
         {
           name: "Github",
@@ -56,6 +63,28 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    isComplete() {
+      return this.Name && this.Email && this.Subject && this.Message;
+    }
+  },
+  methods: {
+    sendMessage() {
+      const Name = this.Name;
+      const Email = this.Email;
+      const Subject = this.Subject;
+      const Message = this.Message;
+      window.location.href =
+        "mailto:9jholger@gmail.com?subject=" +
+        Subject +
+        "&name=" +
+        Name +
+        "&email=" +
+        Email +
+        "&body=" +
+        Message;
+    }
   }
 };
 </script>
@@ -94,5 +123,8 @@ a:hover {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+.button {
+  margin-bottom: 10px;
 }
 </style>
