@@ -63,8 +63,8 @@
           placeholder="Subject"
         />
 
-        <v-textarea
-          type="text"
+        <input
+          type="textarea"
           class="text-field"
           v-model="Message"
           placeholder="Message"
