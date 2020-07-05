@@ -21,31 +21,92 @@
 
     <div class="form-container">
       <h3 class="form-header">
-        Or just email me. I'm more likely to respond this way.
+        Or drop me a message. I'm more likely to respond this way.
       </h3>
-      <form class="form" action="#">
-        <v-text-field
+      <form
+        class="form"
+        ref="form"
+        name="contact"
+        method="POST"
+        action="#"
+        netlify
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+
+        <p class="hidden">
+          <label>
+            Don't fill this out:
+            <input name="bot-field" />
+          </label>
+        </p>
+
+        <input
+          type="text"
+          v-model="Name"
+          class="form-field"
+          placeholder="Name (required)"
+          name="name"
+        />
+
+        <!-- <v-text-field
           v-model="Name"
           placeholder="Name (required)"
           solo
-        ></v-text-field>
-        <v-text-field
+        ></v-text-field> -->
+
+        <input
+          type="email"
+          v-model="Email"
+          class="form-field"
+          placeholder="Email (required)"
+          name="email"
+        />
+
+        <!-- <v-text-field
           v-model="Email"
           placeholder="Email (required)"
           solo
-        ></v-text-field>
-        <v-text-field
+        ></v-text-field> -->
+
+        <input
+          type="text"
+          v-model="Subject"
+          class="form-field"
+          placeholder="Subject"
+        />
+
+        <!-- <v-text-field
           v-model="Subject"
           placeholder="Subject"
           solo
-        ></v-text-field>
-        <v-textarea v-model="Message" placeholder="Message" solo></v-textarea>
+        ></v-text-field> -->
 
-        <v-btn :disabled="!isComplete" class="button" @click="sendMessage">
+        <v-textarea
+          type="text"
+          class="text-field"
+          v-model="Message"
+          placeholder="Message"
+          name="message"
+          counter="1000"
+          outlined
+        />
+
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Submit"
+          ref="submit"
+          x-large
+          :disabled="!isComplete"
+          block
+        />
+        <!-- <v-btn :disabled="!isComplete" class="button" @click="sendMessage">
           <h1>
             <span class="mdi mdi-email"></span>
           </h1>
-        </v-btn>
+        </v-btn> -->
       </form>
     </div>
   </div>
@@ -140,5 +201,33 @@ a:hover {
 }
 .button {
   margin-bottom: 10px;
+}
+.hidden {
+  display: none;
+}
+.form-field {
+  width: 100%;
+  height: 50px;
+  border: 1px solid darkgray;
+  border-radius: 15px;
+  margin: 8px auto;
+  padding-left: 8px;
+  z-index: 1;
+}
+.text-field {
+  margin: 8px auto;
+  border-radius: 15px;
+}
+#submit {
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  background-color: #31708e;
+  color: #f7f9fb;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#submit:disabled {
+  background-color: lightgrey;
 }
 </style>
