@@ -12,17 +12,24 @@
       </v-row>
 
       <div class="name display-3">Holger Mueller</div>
-      <div class="description subheader">Front-End Developer / Problem-Solver</div>
+      <div class="description subheader">
+        Front-End Developer / Problem-Solver
+      </div>
       <v-card-actions class="links">
-        <a href="https://github.com/Holgermueller">
-          <h1 class="mdi mdi-github-circle link"></h1>
+        <a href="https://github.com/Holgermueller" target="_blank">
+          <h1 class="mdi mdi-github link"></h1>
         </a>
         <v-spacer></v-spacer>
-        <a href="https://www.linkedin.com/in/holger-mueller-75855114a/">
+        <a
+          href="https://www.linkedin.com/in/holger-mueller-75855114a/"
+          target="_blank"
+        >
           <h1 class="mdi mdi-linkedin link"></h1>
         </a>
         <v-spacer></v-spacer>
-        <a href="https://docs.google.com/document/d/1ECnxm-wbN3Wsn2j235rghJSNboBEsaZba_TSgauNVQ0/edit">
+        <a
+          href="https://docs.google.com/document/d/1ECnxm-wbN3Wsn2j235rghJSNboBEsaZba_TSgauNVQ0/edit"
+        >
           <h1 class="mdi mdi-file-download-outline resume link"></h1>
         </a>
       </v-card-actions>

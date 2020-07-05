@@ -7,10 +7,10 @@
         <v-row>
           <v-col v-for="(connection, index) in connections" :key="index">
             <div>
-              <a v-bind:href="connection.link">
+              <a :href="connection.link" target="_blank">
                 <h2 class="link">
-                  <span v-bind:class="connection.connection_class"></span>
-                  {{connection.name}}
+                  <span :class="connection.connection_class"></span>
+                  {{ connection.name }}
                 </h2>
               </a>
             </div>
@@ -20,11 +20,25 @@
     </v-card>
 
     <div class="form-container">
-      <h3 class="form-header">Or just email me. I'm more likely to respond this way.</h3>
+      <h3 class="form-header">
+        Or just email me. I'm more likely to respond this way.
+      </h3>
       <form class="form" action="#">
-        <v-text-field v-model="Name" placeholder="Name (required)" solo></v-text-field>
-        <v-text-field v-model="Email" placeholder="Email (required)" solo></v-text-field>
-        <v-text-field v-model="Subject" placeholder="Subject" solo></v-text-field>
+        <v-text-field
+          v-model="Name"
+          placeholder="Name (required)"
+          solo
+        ></v-text-field>
+        <v-text-field
+          v-model="Email"
+          placeholder="Email (required)"
+          solo
+        ></v-text-field>
+        <v-text-field
+          v-model="Subject"
+          placeholder="Subject"
+          solo
+        ></v-text-field>
         <v-textarea v-model="Message" placeholder="Message" solo></v-textarea>
 
         <v-btn :disabled="!isComplete" class="button" @click="sendMessage">
@@ -49,25 +63,25 @@ export default {
         {
           name: "Github",
           connection_class: "mdi mdi-github-circle",
-          link: "https://github.com/Holgermueller"
+          link: "https://github.com/Holgermueller",
         },
         {
           name: "LinkedIn",
           connection_class: "mdi mdi-linkedin",
-          link: "https://www.linkedin.com/in/holger-mueller-75855114a/"
+          link: "https://www.linkedin.com/in/holger-mueller-75855114a/",
         },
         {
           name: "Twitter",
           connection_class: "mdi mdi-twitter",
-          link: "https://twitter.com/thatHMMueller"
-        }
-      ]
+          link: "https://twitter.com/thatHMMueller",
+        },
+      ],
     };
   },
   computed: {
     isComplete() {
       return this.Name && this.Email && this.Subject && this.Message;
-    }
+    },
   },
   methods: {
     sendMessage() {
@@ -84,15 +98,15 @@ export default {
         Email +
         "&body=" +
         Message;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-#Connect {
-  background-color: #8fc1e3;
-}
+/* #Connect {
+background-color: #8fc1e3;
+} */
 .section-header {
   text-align: center;
 }

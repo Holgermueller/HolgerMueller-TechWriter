@@ -3,11 +3,16 @@
     <v-card class="nav-bar" tile>
       <v-container>
         <v-row no-gutters class="nav-row">
-          <v-col v-for="(section, index) in sections" :key="index" class="pa-2" cols="3">
+          <v-col
+            v-for="(section, index) in sections"
+            :key="index"
+            class="pa-2"
+            cols="3"
+          >
             <div class="link" :id="index">
               <a class="section-link" v-bind:href="section.link">
                 <span v-bind:class="section.icon"></span>
-                {{section.title}}
+                {{ section.title }}
               </a>
             </div>
           </v-col>
@@ -25,15 +30,15 @@ export default {
         {
           title: "About",
           icon: "mdi mdi-book-open-page-variant",
-          link: "#About"
+          link: "#About",
         },
         { title: "Portfolio", icon: "mdi mdi-iframe", link: "#Portfolio" },
-        { title: "Gear", icon: "mdi mdi-toolbox", link: "#Gear" },
-        { title: "Connect", icon: "mdi mdi-laptop-mac", link: "#Connect" }
-      ]
+        // { title: "Gear", icon: "mdi mdi-toolbox", link: "#Gear" },
+        { title: "Connect", icon: "mdi mdi-laptop-mac", link: "#Connect" },
+      ],
     };
   },
-  props: {}
+  props: {},
 };
 </script>
 
