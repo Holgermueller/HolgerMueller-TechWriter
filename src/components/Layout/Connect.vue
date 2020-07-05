@@ -28,7 +28,6 @@
         ref="form"
         name="contact"
         method="POST"
-        action="#"
         netlify
         netlify-honeypot="bot-field"
       >
@@ -49,12 +48,6 @@
           name="name"
         />
 
-        <!-- <v-text-field
-          v-model="Name"
-          placeholder="Name (required)"
-          solo
-        ></v-text-field> -->
-
         <input
           type="email"
           v-model="Email"
@@ -63,24 +56,12 @@
           name="email"
         />
 
-        <!-- <v-text-field
-          v-model="Email"
-          placeholder="Email (required)"
-          solo
-        ></v-text-field> -->
-
         <input
           type="text"
           v-model="Subject"
           class="form-field"
           placeholder="Subject"
         />
-
-        <!-- <v-text-field
-          v-model="Subject"
-          placeholder="Subject"
-          solo
-        ></v-text-field> -->
 
         <v-textarea
           type="text"
@@ -102,11 +83,6 @@
           :disabled="!isComplete"
           block
         />
-        <!-- <v-btn :disabled="!isComplete" class="button" @click="sendMessage">
-          <h1>
-            <span class="mdi mdi-email"></span>
-          </h1>
-        </v-btn> -->
       </form>
     </div>
   </div>
