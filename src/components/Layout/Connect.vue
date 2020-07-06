@@ -38,6 +38,7 @@
           v-model="Name"
           class="form-field"
           placeholder="Name (required)"
+          value="name"
           name="name"
         />
 
@@ -46,6 +47,7 @@
           v-model="Email"
           class="form-field"
           placeholder="Email (required)"
+          value="email"
           name="email"
         />
 
@@ -54,6 +56,7 @@
           v-model="Subject"
           class="form-field"
           placeholder="Subject"
+          value="subject"
           name="subject"
         />
 
@@ -62,6 +65,7 @@
           class="text-field"
           v-model="Message"
           placeholder="Message"
+          value="message"
           name="message"
           counter="1000"
           outlined
