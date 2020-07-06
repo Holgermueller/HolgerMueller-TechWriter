@@ -54,6 +54,7 @@
           v-model="Subject"
           class="form-field"
           placeholder="Subject"
+          name="subject"
         />
 
         <input
