@@ -33,13 +33,6 @@
       >
         <input type="hidden" name="form-name" value="contact" />
 
-        <p class="hidden">
-          <label>
-            Don't fill this out:
-            <input name="bot-field" />
-          </label>
-        </p>
-
         <input
           type="text"
           v-model="Name"
@@ -99,7 +92,7 @@ export default {
       connections: [
         {
           name: "Github",
-          connection_class: "mdi mdi-github-circle",
+          connection_class: "mdi mdi-github",
           link: "https://github.com/Holgermueller",
         },
         {
