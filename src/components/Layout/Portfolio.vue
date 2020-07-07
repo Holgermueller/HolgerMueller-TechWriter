@@ -29,7 +29,7 @@
                 </a>
                 <v-spacer></v-spacer>
                 <a :href="Project.repolink" target="_blank" class="repo">
-                  <span class="mdi mdi-github-circle"></span>See the repo
+                  <span class="mdi mdi-github"></span>See the repo
                 </a>
               </v-card-actions>
             </v-card>

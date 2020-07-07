@@ -60,15 +60,13 @@
           name="subject"
         />
 
-        <input
+        <textarea
           type="textarea"
           class="text-field"
           v-model="Message"
           placeholder="Message"
           value="message"
           name="message"
-          counter="1000"
-          outlined
         />
 
         <input
@@ -191,6 +189,11 @@ a:hover {
 .text-field {
   margin: 8px auto;
   border-radius: 15px;
+  border: 1px solid darkgray;
+  width: 100%;
+  height: 250px;
+  padding-left: 8px;
+  padding-top: 8px;
 }
 #submit {
   width: 100%;
@@ -200,6 +203,7 @@ a:hover {
   color: #f7f9fb;
   font-size: 1rem;
   font-weight: bold;
+  border-radius: 15px;
 }
 #submit:disabled {
   background-color: lightgrey;
