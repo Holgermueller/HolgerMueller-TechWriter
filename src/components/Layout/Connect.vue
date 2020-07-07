@@ -72,7 +72,7 @@
         <input
           type="submit"
           name="submit"
-          id="submit"
+          class="submit"
           value="Submit"
           ref="submit"
           x-large
@@ -195,7 +195,7 @@ a:hover {
   padding-left: 8px;
   padding-top: 8px;
 }
-#submit {
+.submit {
   width: 100%;
   height: 50px;
   margin: 10px auto;
@@ -205,7 +205,7 @@ a:hover {
   font-weight: bold;
   border-radius: 15px;
 }
-#submit:disabled {
+.submit:disabled {
   background-color: lightgrey;
 }
 </style>
