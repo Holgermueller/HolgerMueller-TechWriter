@@ -23,6 +23,7 @@
       <h3 class="form-header">
         Or drop me a message. I'm more likely to respond this way.
       </h3>
+
       <form
         class="form"
         ref="form"
@@ -61,7 +62,6 @@
         />
 
         <textarea
-          type="textarea"
           class="text-field"
           v-model="Message"
           placeholder="Message"
@@ -79,7 +79,7 @@
           :disabled="!isComplete"
           block
         >
-          Submit
+          Send
         </button>
       </form>
     </div>
