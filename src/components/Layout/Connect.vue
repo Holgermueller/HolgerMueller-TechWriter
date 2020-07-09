@@ -69,7 +69,7 @@
           name="message"
         />
 
-        <input
+        <button
           type="submit"
           name="submit"
           class="submit"
@@ -78,7 +78,9 @@
           x-large
           :disabled="!isComplete"
           block
-        />
+        >
+          Submit
+        </button>
       </form>
     </div>
   </div>
