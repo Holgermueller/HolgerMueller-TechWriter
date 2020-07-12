@@ -1,9 +1,19 @@
 <template>
   <div id="topButton">
-    <Button id="button" class="button hidden" @click="scrollToTop">
+    <v-btn
+      id="button"
+      @click="scrollToTop"
+      v-scroll="onScroll"
+      v-show="button"
+      button
+      color="primary"
+      bottom
+      right
+      fixed
+      dark
+    >
       <span class="mdi mdi-arrow-up-bold"></span>
-      Top
-    </Button>
+    </v-btn>
   </div>
 </template>
 
@@ -11,44 +21,21 @@
 export default {
   data() {
     return {
-      //showButton: false,
-      //lastScrollPosition: 0
+      button: false,
     };
   },
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
-    onScrollShowButton() {
-      const button = document.getElementById("button")
-      button.classList.remove("hidden");
+
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollToTop || 0;
+      this.button = top > 20;
     },
-    atTopHideButton() {
-      let y = document.scrollTop;
-      console.log(y)
-    }
-  }
+  },
 };
 </script>
 
-<style scoped>
-.button {
-  z-index: 99;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  right: 4%;
-  bottom: 10%;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 15px;
-  background-color: red;
-  color: white;
-  width: fit-content;
-  position: fixed;
-}
-.hidden {
-  display: none;
-}
-</style>>
-    
+<style scoped></style>
