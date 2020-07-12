@@ -80,6 +80,7 @@
           block
         >
           Send
+          <span class="mdi mdi-email-send"></span>
         </button>
       </form>
     </div>
