@@ -45,6 +45,7 @@
 .banner-content {
   background-color: #f7f9fb !important;
   text-align: center;
+  width: 100%;
 }
 .pic {
   margin-top: 2rem;

@@ -11,8 +11,11 @@
       right
       fixed
       dark
+      fab
     >
-      <span class="mdi mdi-arrow-up-bold"></span>
+      <h1>
+        <span class="mdi mdi-chevron-up"></span>
+      </h1>
     </v-btn>
   </div>
 </template>
