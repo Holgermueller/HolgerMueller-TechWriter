@@ -10,9 +10,14 @@
             cols="3"
           >
             <div class="link" :id="index">
-              <a class="section-link" v-bind:href="section.link">
-                <span v-bind:class="section.icon"></span>
-                {{ section.title }}
+              <a
+                class="section-link"
+                :href="section.link"
+                @click="offsetScroll(index)"
+                :id="index"
+              >
+                <span :class="section.icon"></span>
+                <p>{{ section.title }}</p>
               </a>
             </div>
           </v-col>
@@ -38,7 +43,11 @@ export default {
       ],
     };
   },
-  props: {},
+  methods: {
+    offsetScroll(e) {
+      console.log(e);
+    },
+  },
 };
 </script>
 
@@ -67,5 +76,10 @@ a {
 a:hover {
   color: #687864;
   cursor: pointer;
+}
+@media (min-width: 360px) and (max-width: 450px) {
+  p {
+    display: none;
+  }
 }
 </style>

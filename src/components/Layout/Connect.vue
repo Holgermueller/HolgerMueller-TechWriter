@@ -114,11 +114,13 @@ export default {
       ],
     };
   },
+
   computed: {
     isComplete() {
       return this.Name && this.Email && this.Subject && this.Message;
     },
   },
+
   methods: {
     sendMessage() {
       const Name = this.Name;
@@ -145,6 +147,7 @@ background-color: #8fc1e3;
 } */
 .section-header {
   text-align: center;
+  margin-top: 7%;
 }
 .link {
   text-align: center;

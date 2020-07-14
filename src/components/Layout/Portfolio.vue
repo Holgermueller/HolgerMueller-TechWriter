@@ -102,6 +102,7 @@ export default {
 }
 .section-header {
   text-align: center;
+  padding-top: 7%;
 }
 .portfolio-container {
   width: 75%;
