@@ -1,27 +1,21 @@
 <template>
   <div id="nav">
-    <v-card class="nav-bar" tile>
-      <v-container ma-0 pa-0>
-        <v-row no-gutters class="nav-row">
-          <v-col
-            v-for="(section, index) in sections"
-            :key="index"
-            class="pa-2"
-            cols="3"
-          >
-            <div class="link" :id="index">
-              <a
-                class="section-link"
-                :href="section.link"
-                @click="offsetScroll(index)"
-                :id="index"
-              >
-                <span :class="section.icon"> </span>
-                <p>{{ section.title }}</p>
-              </a>
-            </div>
-          </v-col>
-        </v-row>
+    <v-card class="nav-bar" color="#8fc1e3" tile>
+      <v-container my-0 mx-auto py-0 px-auto fluid>
+        <v-layout no-gutters class="nav-row">
+          <v-flex v-for="(section, index) in sections" :key="index">
+            <v-btn
+              class="section-link"
+              :id="index"
+              :href="section.link"
+              text
+              block
+            >
+              <v-icon :class="section.icon"></v-icon>
+              <span class="text"> {{ section.title }}</span>
+            </v-btn>
+          </v-flex>
+        </v-layout>
       </v-container>
     </v-card>
   </div>
@@ -58,33 +52,22 @@ export default {
   width: 100%;
 }
 
-.nav-bar {
-  background-color: #8fc1e3;
-}
-.nav-row {
-  justify-content: center;
-}
-.link {
-  text-align: center;
-  font-size: 1.5rem;
-}
-a {
-  text-decoration: none;
-}
 .section-link {
   color: #31708e;
 }
+
 a:hover {
   color: #687864;
   cursor: pointer;
 }
-p {
-  float: right;
-  margin: 0;
+
+.text {
+  font-size: 1rem;
 }
+
 @media (min-width: 360px) and (max-width: 450px) {
-  p {
-    display: none;
+  .text {
+    font-size: 0;
   }
 }
 </style>
