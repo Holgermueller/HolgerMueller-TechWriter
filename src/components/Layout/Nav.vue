@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <v-card class="nav-bar" tile>
-      <v-container>
+      <v-container ma-0 pa-0>
         <v-row no-gutters class="nav-row">
           <v-col
             v-for="(section, index) in sections"
@@ -16,7 +16,7 @@
                 @click="offsetScroll(index)"
                 :id="index"
               >
-                <span :class="section.icon"></span>
+                <span :class="section.icon"> </span>
                 <p>{{ section.title }}</p>
               </a>
             </div>
@@ -57,6 +57,7 @@ export default {
   position: fixed;
   width: 100%;
 }
+
 .nav-bar {
   background-color: #8fc1e3;
 }
@@ -76,6 +77,10 @@ a {
 a:hover {
   color: #687864;
   cursor: pointer;
+}
+p {
+  float: right;
+  margin: 0;
 }
 @media (min-width: 360px) and (max-width: 450px) {
   p {
