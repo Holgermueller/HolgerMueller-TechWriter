@@ -9,8 +9,8 @@
             <div>
               <a :href="connection.link" target="_blank">
                 <h2 class="link">
-                  <span :class="connection.connection_class"></span>
-                  {{ connection.name }}
+                  <v-icon :class="connection.connection_class"> </v-icon>
+                  <span class="connection-name">{{ connection.name }}</span>
                 </h2>
               </a>
             </div>
@@ -213,5 +213,11 @@ a:hover {
 }
 .submit:disabled {
   background-color: lightgrey;
+}
+
+@media (min-width: 360px) and (max-width: 450px) {
+  .connection-name {
+    font-size: 0;
+  }
 }
 </style>
