@@ -219,5 +219,11 @@ a:hover {
   .connection-name {
     font-size: 0;
   }
+
+  .form-header {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

@@ -125,4 +125,10 @@ a:hover {
 .repo {
   color: black;
 }
+
+@media (min-width: 360px) and (max-width: 450px) {
+  .portfolio-container {
+    width: 90%;
+  }
+}
 </style>

@@ -16,10 +16,12 @@ export default {
   components: {
     Nav,
     Index,
-    Footer
+    Footer,
   },
   data: () => ({
     //
-  })
+  }),
 };
 </script>
+
+<style scoped></style>

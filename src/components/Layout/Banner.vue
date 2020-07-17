@@ -41,6 +41,7 @@
 #banner {
   z-index: 1;
   margin-top: 3rem;
+  width: 100%;
 }
 .banner-content {
   background-color: #f7f9fb !important;
@@ -72,5 +73,11 @@
 .description,
 .link {
   color: #31708e;
+}
+
+@media (min-width: 360px) and (max-width: 450px) {
+  .links {
+    width: 50%;
+  }
 }
 </style>
