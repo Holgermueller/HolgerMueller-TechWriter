@@ -9,7 +9,9 @@
             <div>
               <a :href="connection.link" target="_blank">
                 <h2 class="link">
-                  <v-icon :class="connection.connection_class"> </v-icon>
+                  <v-icon class="link-icon">
+                    {{ connection.connection_class }}</v-icon
+                  >
                   <span class="connection-name">{{ connection.name }}</span>
                 </h2>
               </a>
@@ -21,7 +23,7 @@
 
     <div class="form-container">
       <h3 class="form-header">
-        Or drop me a message. I'm more likely to respond this way.
+        Or drop me a message. I'll respond faster this way.
       </h3>
 
       <form
@@ -158,7 +160,8 @@ background-color: #8fc1e3;
   margin-left: auto;
   margin-right: auto;
 }
-a {
+a,
+.link-icon {
   text-decoration: none;
   color: #31708e;
 }
