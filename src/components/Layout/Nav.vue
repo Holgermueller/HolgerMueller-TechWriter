@@ -52,12 +52,8 @@ export default {
   width: 100%;
 }
 
-.section-link {
-  color: #31708e;
-}
-
 a:hover {
-  color: #687864;
+  color: #31708e;
   cursor: pointer;
 }
 

@@ -6,16 +6,16 @@
       <v-container>
         <v-row>
           <v-col v-for="(connection, index) in connections" :key="index">
-            <div>
-              <a :href="connection.link" target="_blank">
-                <h2 class="link">
-                  <v-icon class="link-icon">
-                    {{ connection.connection_class }}</v-icon
-                  >
-                  <span class="connection-name">{{ connection.name }}</span>
-                </h2>
-              </a>
-            </div>
+            <v-btn
+              :href="connection.link"
+              target="_blank"
+              class="social-link"
+              text
+              block
+            >
+              <v-icon> {{ connection.connection_class }}</v-icon>
+              <span class="connection-name">{{ connection.name }}</span>
+            </v-btn>
           </v-col>
         </v-row>
       </v-container>
@@ -41,7 +41,6 @@
           v-model="Name"
           class="form-field"
           placeholder="Name (required)"
-          value="name"
           name="name"
         />
 
@@ -50,7 +49,6 @@
           v-model="Email"
           class="form-field"
           placeholder="Email (required)"
-          value="email"
           name="email"
         />
 
@@ -59,31 +57,30 @@
           v-model="Subject"
           class="form-field"
           placeholder="Subject"
-          value="subject"
           name="subject"
         />
 
-        <textarea
+        <v-textarea
           class="text-field"
           v-model="Message"
           placeholder="Message"
-          value="message"
           name="message"
+          counter="1000"
+          outlined
         />
 
-        <button
+        <input
           type="submit"
           name="submit"
           class="submit"
-          value="Submit"
+          value="Send"
           ref="submit"
           x-large
-          :disabled="!isComplete"
+          :disabled="
+            Name === '' || Email === '' || Subject === '' || Message === ''
+          "
           block
-        >
-          Send
-          <span class="mdi mdi-email-send"></span>
-        </button>
+        />
       </form>
     </div>
   </div>
@@ -93,10 +90,10 @@
 export default {
   data() {
     return {
-      Name: null,
-      Email: null,
-      Subject: null,
-      Message: null,
+      Name: "",
+      Email: "",
+      Subject: "",
+      Message: "",
       connections: [
         {
           name: "Github",
@@ -116,30 +113,6 @@ export default {
       ],
     };
   },
-
-  computed: {
-    isComplete() {
-      return this.Name && this.Email && this.Subject && this.Message;
-    },
-  },
-
-  methods: {
-    sendMessage() {
-      const Name = this.Name;
-      const Email = this.Email;
-      const Subject = this.Subject;
-      const Message = this.Message;
-      window.location.href =
-        "mailto:9jholger@gmail.com?subject=" +
-        Subject +
-        "&name=" +
-        Name +
-        "&email=" +
-        Email +
-        "&body=" +
-        Message;
-    },
-  },
 };
 </script>
 
@@ -151,22 +124,15 @@ background-color: #8fc1e3;
   text-align: center;
   margin-top: 7%;
 }
-.link {
-  text-align: center;
-}
 .connections-display {
   width: 75%;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
+  background-color: #8fc1e3;
 }
-a,
-.link-icon {
-  text-decoration: none;
+.social-link:hover {
   color: #31708e;
-}
-a:hover {
-  color: #687864;
 }
 .form-container {
   margin-top: 4rem;
@@ -198,16 +164,11 @@ a:hover {
 .text-field {
   margin: 8px auto;
   border-radius: 15px;
-  border: 1px solid darkgray;
-  width: 100%;
-  height: 250px;
-  padding-left: 8px;
-  padding-top: 8px;
 }
 .submit {
   width: 100%;
   height: 50px;
-  margin: 10px auto;
+  margin: 8px auto;
   background-color: #31708e;
   color: #f7f9fb;
   font-size: 1rem;
