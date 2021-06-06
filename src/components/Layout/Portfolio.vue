@@ -46,6 +46,15 @@ export default {
     return {
       Projects: [
         {
+          title: "Story-Idea Generator",
+          description:
+            "Single page application that helps stumped writers come up with their next best seller",
+          image: require("../../images/storyIdeaGenerator.png"),
+          repolink: "https://github.com/Holgermueller/story-idea-generator",
+          tech: "Gatsby, Material-Ui",
+          demoLink: "https://confident-tesla-1e3118.netlify.app/",
+        },
+        {
           title: "Bucket List",
           description:
             "Single Page CRUD Application allows users to create the ulimate to-do list, which they can update as they make progress on achieving their goals.",
