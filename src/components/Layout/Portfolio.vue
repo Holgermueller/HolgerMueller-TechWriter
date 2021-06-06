@@ -46,6 +46,15 @@ export default {
     return {
       Projects: [
         {
+          title: "Vue-wish-list",
+          description:
+            "Vue front-end and cloud firestore back-end. CRUD application. Gives users an alternative to using Amazon's wishlist as a way of tracking items they'd like to purchase, or have someone purchase for them.",
+          image: require("../../images/wishList.png"),
+          repolink: "https://github.com/Holgermueller/wish-list",
+          tech: "Vue, Vuex, Vuetify, Cloud Firestore",
+          demoLink: "https://less-wish-list.web.app/dashboard",
+        },
+        {
           title: "Story-Idea Generator",
           description:
             "Single page application that helps stumped writers come up with their next best seller",
