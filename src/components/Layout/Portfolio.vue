@@ -63,24 +63,24 @@ export default {
           tech: "Gatsby, Material-Ui",
           demoLink: "https://confident-tesla-1e3118.netlify.app/",
         },
-        {
-          title: "Bucket List",
-          description:
-            "Single Page CRUD Application allows users to create the ulimate to-do list, which they can update as they make progress on achieving their goals.",
-          image: require("../../images/bucketlistshot.png"),
-          repolink: "https://github.com/Holgermueller/bucketlist",
-          tech: "MongoDB, React, Express, Node",
-          demoLink: "https://bucketlistappmern.herokuapp.com/",
-        },
-        {
-          title: "React News App",
-          description:
-            "Single Page Application built with MongoDB, Express, React, and Node. Leverages NY Times API so users can scan headlines and save links to read articles later.",
-          image: require("../../images/nytreact.png"),
-          repolink: "https://github.com/Holgermueller/nytreact2",
-          tech: "MongoDB, React, Express, Node",
-          demoLink: "https://reactnytimesapp.herokuapp.com/",
-        },
+        // {
+        //   title: "Bucket List",
+        //   description:
+        //     "Single Page CRUD Application allows users to create the ulimate to-do list, which they can update as they make progress on achieving their goals.",
+        //   image: require("../../images/bucketlistshot.png"),
+        //   repolink: "https://github.com/Holgermueller/bucketlist",
+        //   tech: "MongoDB, React, Express, Node",
+        //   demoLink: "https://bucketlistappmern.herokuapp.com/",
+        // },
+        // {
+        //   title: "React News App",
+        //   description:
+        //     "Single Page Application built with MongoDB, Express, React, and Node. Leverages NY Times API so users can scan headlines and save links to read articles later.",
+        //   image: require("../../images/nytreact.png"),
+        //   repolink: "https://github.com/Holgermueller/nytreact2",
+        //   tech: "MongoDB, React, Express, Node",
+        //   demoLink: "https://reactnytimesapp.herokuapp.com/",
+        // },
         {
           title: "Time and Temp",
           description: "A weathr app with location search.",
