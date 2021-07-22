@@ -46,6 +46,16 @@ export default {
     return {
       Projects: [
         {
+          title: "Hours Tracker",
+          description:
+            "A way for me to track hours I need to make up due to the bookstore closing early.",
+          image: require("../../images/hoursTracker"),
+          repolink: "https://github.com/Holgermueller/vue-hours-tracker",
+          tech: "Vue, Vuex, Vuetify, Cloud Firestore",
+          demoLink: "https://trackmyhours-74a8f.web.app/",
+        },
+
+        {
           title: "Vue-wish-list",
           description:
             "Vue front-end and cloud firestore back-end. CRUD application. Gives users an alternative to using Amazon's wishlist as a way of tracking items they'd like to purchase, or have someone purchase for them.",
