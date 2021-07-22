@@ -49,12 +49,11 @@ export default {
           title: "Hours Tracker",
           description:
             "A way for me to track hours I need to make up due to the bookstore closing early.",
-          image: require("../../images/hoursTracker"),
+          image: require("../../images/hoursTracker.png"),
           repolink: "https://github.com/Holgermueller/vue-hours-tracker",
           tech: "Vue, Vuex, Vuetify, Cloud Firestore",
           demoLink: "https://trackmyhours-74a8f.web.app/",
         },
-
         {
           title: "Vue-wish-list",
           description:
