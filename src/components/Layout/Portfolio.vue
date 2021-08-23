@@ -46,6 +46,14 @@ export default {
     return {
       Projects: [
         {
+          title: "Trip Scheduler",
+          description: "A way to keep track of any upcoming getaways.",
+          image: require("../../images/scheduler.png"),
+          repolink: "https://github.com/Holgermueller/vue-train-scheduler",
+          tech: "Vue, Vuex, Vuetify, Cloud Firestore",
+          demoLink: "https://moodtracker-db661.web.app/?redirect=%2Fdashboard",
+        },
+        {
           title: "Hours Tracker",
           description:
             "A way for me to track hours I need to make up due to the bookstore closing early.",
