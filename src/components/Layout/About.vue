@@ -11,7 +11,7 @@
       a few other technologies. My plan of attack on projects is to break the
       overall task into the smallest manageable pieces and build up from there.
     </p>
-    <p>
+    <p class="about-paragraph">
       When not coding, I enjoy reading and writing, watching movies, hiking, and
       travel. One of my longshot dreams is to visit every country on the planet.
       Some of my bucket-list destinations are Japan, New Zealand, Portugal,
