@@ -5,13 +5,21 @@
       I'm a full-stack front-end developer living in Minneapolis, MN.
     </p>
     <p class="about-paragraph">
-      The brain needs blood to function. Because of this, I exercise regularly.
-      I'm an avid weight-lifter, making sure to focus on one muscle group a day,
-      six days a week. A year ago, I set a personal best by deadlifting 350 lbs.
-      I hope to lift 400 lbs. one day. I also make sure I get in at least a
-      half-hour of cardio a day, 3-4 days a week. During the spring, summer, and
-      fall, I'm an avid hiker, and I like to hike and be outdoors for about an
-      hour.
+      Originally from Upstate New York, I moved to Minnesota in late 2015, where
+      I've since been braving the winters and earning a living. I'm proficient
+      in Javascript, jQuery, React, VueJs, Google's Cloud Firebase, MongoDB, and
+      a few other technologies. My plan of attack on projects is to break the
+      overall task into the smallest manageable pieces and build up from there.
+    </p>
+    <p>
+      When not coding, I enjoy reading and writing, watching movies, hiking, and
+      travel. One of my longshot dreams is to visit every country on the planet.
+      Some of my bucket-list destinations are Japan, New Zealand, Portugal,
+      South Africa, and Iceland. So far, I've been to Australia, the Republic of
+      Korea, France, Canada, and Italy. As far as reading goes, I've recently
+      rediscovered my love of Science Ficiton and fantasy, and I've always had
+      an affinty for Marvel Comics. With movies, I tend to enjoy comedies over
+      other genres.
     </p>
   </div>
 </template>
