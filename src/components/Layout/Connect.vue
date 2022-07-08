@@ -105,11 +105,6 @@ export default {
           connection_class: "mdi mdi-linkedin",
           link: "https://www.linkedin.com/in/holger-mueller-75855114a/",
         },
-        {
-          name: "Twitter",
-          connection_class: "mdi mdi-twitter",
-          link: "https://twitter.com/thatHMMueller",
-        },
       ],
     };
   },
