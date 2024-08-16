@@ -1,7 +1,10 @@
+const fs = require("fs");
+const csvPath = require("path").resolve(__dirname, "csvFile.csv");
+const csv_file = fs.readFileSync(csvPath, "utf-8");
+
 async function convertCSVToJSON() {
-  await fetch("convert-csv-to-json/csvFile.csv")
+  await fetch(csv_file)
     .then((response) => {
-      console.log(response);
       return response.text();
     })
     .then((data) => {
@@ -19,3 +22,5 @@ async function convertCSVToJSON() {
       }
     });
 }
+
+convertCSVToJSON();

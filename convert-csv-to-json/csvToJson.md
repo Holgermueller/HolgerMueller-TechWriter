@@ -1,10 +1,10 @@
 # How to convert a CSV file to a JSON object with JavaScript on the client side
 
-A month or so ago, I was working on a project that required using data in a CSV file to create options on an HTML selector. I knew I could manually, painstakingly, hardcode the data into the HTML element. (And in the end, it might have even been the faster option.) But I didn’t want to do that. I knew there had to be a way to convert that data in the CSV file to a JSON object dynamically. However, in my research, I found a lot of solutions for how to do this in node, but nothing really for the frontend. (If there is something else out there that shows how to do this, I missed it, most likely due to my lack of patience.) It was only through a few lucky guesses that I was able to come up with this solution.
+A month or so ago, I was working on a project that required using data in a CSV file to create options on an HTML selector. (You can check out that project [HERE](https://github.com/Holgermueller/courseraweatherapp)) I knew I could manually, painstakingly, hardcode the data into the HTML element. (And in the end, it might have even been the faster option.) But I didn’t want to do that. I knew there had to be a way to convert the data in the CSV file to a JSON object dynamically. However, in my research, I found a lot of solutions for how to do this in the backend, but nothing really for the frontend. (If there is something else out there that shows how to do this, I missed it, most likely due to my lack of patience.) It was only through a few lucky guesses that I was able to come up with this solution.
 
 ## What do CSV and JSON mean?
 
-I’m not going to go too deep into the weeds about what CSV and JSON are. If you’re reading this, you probably know already, and you can feel free to skip ahead to the process.
+I’m not going to go too deep into the weeds about what CSV and JSON are. If you’re reading this, you probably know already, and you can feel free to skip ahead to the process. That said, here are some brief explanations.
 
 ### CSV
 
@@ -18,7 +18,7 @@ latitude,longitude,city,country
 37.983,23.727,Athens,Greece
 ```
 
-As you can see, the first line defines the table’s columns and the following lines are the data. All of the data values are separated by commas, hence the name.
+As you can see, the first line defines the table’s columns and the following lines are the data, separated into their respective columns by commas, hence the name.
 
 ### JSON
 
@@ -45,9 +45,17 @@ JSON stands for JavaScript Object Notation. As the name suggests, a JSON is a Ja
 }
 ```
 
-Don't worry too much about the specific data here, just focus on the data types and how they're arranged. As you can see, it's just a JavaScript object with the complexity turned up a little. Having data in this format makes it easier to work with.
+Don't worry too much about the specific data here, just focus on the data types and how they're arranged. As you can see, it's just a JavaScript object with the complexity turned up a little. And yes, they can get more complicated than this. JSONs usually follow some kind of pattern, and having data in this format makes the data easier to work with.
 
 Now let's look at turning one into the other.
+
+## Sone Notes Before We Begin
+
+First, while I'm writing this as beginner friendly as possible, this tutorial suposes you have some knowledge of JavaScript.
+
+Second, though this is for frontend work, it supposes you're running your app on some kind of development server.
+
+If you ever feel lost at any point while reading this, feel free to refer to the code in the repository [Here](https://github.com/Holgermueller/demo-code-files/blob/master/convert-csv-to-json/converter.js).
 
 ## The Process
 
@@ -57,7 +65,7 @@ The first thing we need to do is declare a function to handle the conversion. Ca
 async function convertCSVToJSON(){}
 ```
 
-Now that we have our function declared, we need to grab the data stored in the CSV file. (Heads up, this tutorial uses a local CSV file). To do this, use JavaScript’s built-in fetch API to grab the data from the path to the CSV file.
+Now that we have our function declared, we need to grab the data stored in the CSV file. (Heads up, this tutorial uses a local CSV file). To do this, use JavaScript’s built-in fetch method to grab the data from the path to the CSV file.
 
 ```
 await fetch('./csvFile.csv')
