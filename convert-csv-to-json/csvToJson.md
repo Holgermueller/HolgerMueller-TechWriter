@@ -49,13 +49,13 @@ Don't worry too much about the specific data here, just focus on the data types 
 
 Now let's look at turning one into the other.
 
-## Sone Notes Before We Begin
+## Some Notes Before We Begin
 
-First, while I'm writing this as beginner friendly as possible, this tutorial suposes you have some knowledge of JavaScript.
+First, while this tutorial is written as beginner friendly as possible, it supposes you have some knowledge of JavaScript.
 
 Second, though this is for frontend work, it supposes you're running your app on some kind of development server.
 
-If you ever feel lost at any point while reading this, feel free to refer to the code in the repository [Here](https://github.com/Holgermueller/demo-code-files/blob/master/convert-csv-to-json/converter.js).
+If you ever feel lost at any point while reading this, feel free to refer to the code in the repository [here](https://github.com/Holgermueller/demo-code-files/blob/master/convert-csv-to-json/converter.js).
 
 ## The Process
 
