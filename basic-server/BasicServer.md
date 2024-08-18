@@ -73,6 +73,6 @@ HTTP.createServer((req, res) => {
 });
 ```
 
-9. Now in your terminal you want to start the server. To do that you run: node whateverTheNameOfMyFileIs.js, so for this example we run node server.js. Once the server starts running, in the terminal, you should see the result of the console log telling you the file is running. Now go to your browser and go to localhost:8080. You should see Hello World in the upper left-hand corner of your browser.
+9. Now in your terminal you want to start the server. To do that you run: node whateverTheNameOfMyFileIs.js, so for this example we run node server.js. Once the server starts running, in the terminal, you should see the result of the console log telling you the file is running. At the same time, go to your browser and go to localhost:8080. You should see Hello world! in the upper left-hand corner of your browser.
 
 And that's it, that's how to build a basic server with JavaScript.
