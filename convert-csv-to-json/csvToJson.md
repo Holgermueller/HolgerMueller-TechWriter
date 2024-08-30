@@ -1,10 +1,10 @@
 # How to convert a CSV file to a JSON object with JavaScript on the client side
 
-A month or so ago, I was working on a project that required using data in a CSV file to create options on an HTML selector. (You can check out that project [HERE](https://github.com/Holgermueller/courseraweatherapp)) I knew I could manually, painstakingly, hardcode the data into the HTML element. (And in the end, it might have even been the faster option.) But I didn’t want to do that. I knew there had to be a way to convert the data in the CSV file to a JSON object dynamically. However, in my research, I found a lot of solutions for how to do this in the backend, but nothing really for the frontend. (If there is something else out there that shows how to do this, I missed it, most likely due to my lack of patience.) It was only through a few lucky guesses that I was able to come up with this solution.
+A month or so ago, I was working on a project that required using data in a CSV file to create options on an HTML selector. (You can check out that project [HERE](https://github.com/Holgermueller/courseraweatherapp).) I knew I could manually, painstakingly, hardcode the data into the HTML element. (And in the end, it might have even been the faster option.) But I didn’t want to do that. I knew there had to be a way to convert the data in the CSV file to a JSON object dynamically. However, in my research, I found a lot of solutions for how to do this in the backend, but nothing really for the frontend. (If there is something else out there that shows how to do this, I missed it, most likely due to my lack of patience.) It was only through a few lucky guesses that I was able to come up with this solution.
 
 ## What do CSV and JSON mean?
 
-I’m not going to go too deep into the weeds about what CSV and JSON are. If you’re reading this, you probably know already, and you can feel free to skip ahead to the process. That said, here are some brief explanations.
+I’m not going to go too deep into the weeds about what CSV and JSON are. If you’re reading this, you probably know already, and you can feel free to skip ahead to [the guide](##the-steps). That said, here are some brief explanations.
 
 ### CSV
 
@@ -57,7 +57,7 @@ Second, though this is for frontend work, it supposes you're running your app on
 
 If you ever feel lost at any point while reading this, feel free to refer to the code in the repository [here](https://github.com/Holgermueller/demo-code-files/blob/master/convert-csv-to-json/converter.js).
 
-## The Process
+## The Steps
 
 The first thing we need to do is declare a function to handle the conversion. Call the function anything you like. For the purposes of this tutorial, I’m calling my function convertCSVToJSON because when I learned to code, my instructor said to name things the way a seven year old would. The function should look something like this:
 

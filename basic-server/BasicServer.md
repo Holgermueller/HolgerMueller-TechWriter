@@ -8,13 +8,13 @@ You may be asking yourself, why do I need to know how to build a node server wit
 
 So with that out of the way, let’s build the server.
 
-## Notes
+## Before You Begin
 
-Heads up,While I’m trying to keep this tutorial beginner-friendly, it still presupposes you have some knowledge of javascript.
+While I’m trying to keep this tutorial beginner-friendly, it still presupposes you have some knowledge of javascript.
 
 If you get lost at any moment, you can refer to the code [here](https://github.com/Holgermueller/demo-code-files/blob/master/basic-server/server.js).
 
-## The Process
+## The Steps
 
 1. First we have to create a file where our server is going to live, which we’re going to do in whatever your favorite text editor is. While you can call the file anything you want, the conventions for naming this kind of file seem to be calling it server.js or app.js. For the purposes of this tutorial, we’ll call this file server.js.
 
