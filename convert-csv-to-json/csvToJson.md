@@ -4,7 +4,7 @@ A month or so ago, I was working on a project that required using data in a CSV 
 
 ## What do CSV and JSON mean?
 
-I’m not going to go too deep into the weeds about what CSV and JSON are. If you’re reading this, you probably know already, and you can feel free to skip ahead to [the guide](##the-steps). That said, here are some brief explanations.
+I’m not going to go too deep into the weeds about what CSV and JSON are. If you’re reading this, you probably know already, and you can feel free to skip ahead to [the guide](#the-steps). That said, here are some brief explanations.
 
 ### CSV
 
