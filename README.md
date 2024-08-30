@@ -1,5 +1,9 @@
 # Holger Mueller - Technical Writer
 
+## About this repo
+
+I created this repo to act as my writing portfolio.
+
 ## My Portfolio
 
 - [How To Create a Basic Server Without ExpressJS](https://github.com/Holgermueller/demo-code-files/blob/master/basic-server/BasicServer.md)
