@@ -8,7 +8,7 @@ I created this repo to act as my writing portfolio.
 
 | Document | Doc Type | Description|
 
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 
 | [How To Create a Basic Server Without ExpressJS](https://github.com/Holgermueller/demo-code-files/blob/master/basic-server/BasicServer.md) | Tutorial | Explains how to create a basic server in JavaScript without using any dependencies |
 
