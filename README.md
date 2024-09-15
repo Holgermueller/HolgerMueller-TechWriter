@@ -1,10 +1,10 @@
 # Holger Mueller - Technical Writer
 
-## About this repo
+## I created this repo so I can have a central location to showcase my technical writing skills.
 
-I created this repo to act as my writing portfolio.
+This repo is my technical writing portfolio. It does not contain every example of my technical writing, but it does contain the pieces that best reflect my knowledge and writing skills. Some of the pieces are also included in this repo. Others are contained in other locations, but I've included links to their locations.
 
-## My Portfolio
+### My Portfolio
 
 | Document                                                                                                                                    | Doc Type | Description                                                                                                                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
